@@ -24,5 +24,10 @@ public class MainTest {
         Assertions.assertFalse(Main.nameSearch("х"));
         Main.name = "end";
     }
+    @Test
+    public void testFour(){
+        Assertions.assertFalse(Main.nameSearch(String.valueOf(123)));
+        Main.name = "end";
+    }
 
 }
